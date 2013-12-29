@@ -1,0 +1,29 @@
+{
+  "name": "xaymaca-wraps",
+  "version": "0.0.1",
+  "homepage": "https://github.com/anyaelise/xaymaca-wraps",
+  "authors": [
+    "Anya Marshall <anya.elise.marshall@gmail.com>"
+  ],
+  "description": "Website for Xaymaca Wraps",
+  "main": "js\\app.js",
+  "keywords": [
+    "xaymaca",
+    "wraps"
+  ],
+  "private": true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "~3.0.3"
+        , "jquery": "~2.0.3"
+        , "less": "~1.5.1"
+        , "requirejs": "~2.1.9"
+    }
+}
