@@ -1,0 +1,28 @@
+
+/* fonts */
+@font-face {
+    font-family: 'AlexBrush';
+    src: url(fonts/AlexBrush-Regular.ttf);
+}
+
+/* colors */
+@lightGreen: #DEFE72;
+@darkGreen: #C2F803;
+
+.linearGradient(@col1, @col2) when (iscolor(@col1)) and (iscolor(@col2)) {
+    background: linear-gradient(@col1, @col2);   
+    background: -o-linear-gradient(@col1, @col2); 
+    background: -moz-linear-gradient(@col1, @col2);
+    background: -webkit-linear-gradient(@col1, @col2);
+}
+
+.navbar-static-top {
+    .linearGradient(@lightGreen, @darkGreen);
+    padding-left: 10%;
+    a {
+        font-family: 'AlexBrush';
+        color: black;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
