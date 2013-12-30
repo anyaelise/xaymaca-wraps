@@ -8,10 +8,18 @@
 </head>
 <body>
   
-  <nav id="navTop" class="navbar navbar-static-top" role="navigation">
+  <nav id="nav-top" class="navbar navbar-static-top" role="navigation">
         <a class="navbar-brand" href="#">Wrap Xaymaca</a>
+        <div id="social-media" ng-controller="SocialMediaCtrl">
+            <ul>
+                <li ng-repeat="site in sites"><a ng-href="{{site.loc}}" title="{{site.name}}"><img alt="{{site.name}}" ng-src="{{site.icon}}"/></a></li>
+            </ul>
+        </div>
   </nav>
-  <div ng-view></div>
+    
+ <div ng-view>
+     
+ </div>
   
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>

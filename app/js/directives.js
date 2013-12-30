@@ -4,8 +4,12 @@
 
 
 angular.module('xaymacaWraps.directives', [])
-  .directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-  }]);
+  .directive('socialMediaLinks', 
+      function(){
+        return {
+            restrict: 'EA',
+            replace: 'true',
+            transclude: 'true',
+            templateUrl: 'partials/social-media-icons.html'                  
+        }
+  });

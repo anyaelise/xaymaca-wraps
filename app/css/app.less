@@ -1,4 +1,3 @@
-
 /* fonts */
 @font-face {
     font-family: 'AlexBrush';
@@ -16,13 +15,28 @@
     background: -webkit-linear-gradient(@col1, @col2);
 }
 
-.navbar-static-top {
+#nav-top {
     .linearGradient(@lightGreen, @darkGreen);
-    padding-left: 10%;
+    padding-left: 10%;    
     a {
         font-family: 'AlexBrush';
         color: black;
         font-size: 2em;
         font-weight: bold;
+        margin-top: 0.8%;
+    }
+}
+
+#social-media {
+    float: right;
+    padding-right: 10%;
+    margin-top: 1%;
+    ul {
+        li {
+            display: inline;
+            list-style-type: none;
+            padding-left: 1px;
+            padding-right: 1px;
+        }
     }
 }
