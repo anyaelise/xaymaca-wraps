@@ -1,3 +1,29 @@
-<div>
-    {{hello}}
-</div>
+<article id="landing">
+    <section id="get-started" class="col-md-5 col-md-offset-1">
+        <h3>Get Started Here</h3>
+        <div id="welcome-video"><h1>WELCOME VIDEO</h1></div>
+    </section>
+
+    <section id="what-are" class="col-md-5">
+        <h3>What Are Body Wraps?</h3>
+        <div class="backing">
+            <p>
+               This exclusive new body slimming treatment is called the <br> <span class="highlight">Ultimate Body Applicator</span>. It is a site-specific, non-woven 
+               cloth infused with botanical ingredients. When placed on the skin, the wrap helps to tighten, tone and firm in as 
+               little as 45 minutes!
+            </p>
+        </div>
+        <ul ng-controller="ChecklistCtrl">            
+            <li ng-repeat="item in checklist"><span class="glyphicon glyphicon-ok"></span>{{item.text}}</li>
+        </ul>
+    </section>
+</article>
+
+<article id="brochure" class="col-md-10 col-md-offset-1">
+    <img src="img/brochure.png"/>
+    <div id="brochure-buttons">
+        <a href="resources/brochure.pdf" class="btn">View Brochure</a>
+        <br/>
+        <a href="http://wrapxaymaca.myitworks.com/shop/product/111/" class="btn">Buy Now</a>
+    </div>
+</article>

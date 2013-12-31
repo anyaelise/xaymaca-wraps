@@ -7,20 +7,28 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
 <body>
-  
-  <nav id="nav-top" class="navbar navbar-static-top" role="navigation">
-        <a class="navbar-brand" href="#">Wrap Xaymaca</a>
-        <div id="social-media" ng-controller="SocialMediaCtrl">
+    
+    <nav id="nav-top" class="navbar navbar-static-top">
+          <a class="navbar-brand" href="#">Wrap Xaymaca</a>
+          <div id="social-media" ng-controller="SocialMediaCtrl">
+              <ul>
+                  <li ng-repeat="site in sites"><a ng-href="{{site.loc}}" title="{{site.name}}"><img alt="{{site.name}}" ng-src="{{site.icon}}"/></a></li>
+              </ul>
+          </div>
+    </nav>
+    
+    <div class="container">
+        <div id="nav-menu" role="navigation" ng-controller="MenuCtrl">
             <ul>
-                <li ng-repeat="site in sites"><a ng-href="{{site.loc}}" title="{{site.name}}"><img alt="{{site.name}}" ng-src="{{site.icon}}"/></a></li>
+                <li ng-repeat="item in menu"><a ng-href="{{item.loc}}">{{item.name}}</a></li>
             </ul>
         </div>
-  </nav>
+
+        <div ng-view></div>
+    </div>
     
- <div ng-view>
-     
- </div>
-  
+    <footer>&copy; Wrap Xaymaca 2013. All rights reserved.</footer>
+    
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
   -->
