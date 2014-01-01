@@ -1,10 +1,10 @@
-<article id="landing">
-    <section id="get-started" class="col-md-5 col-md-offset-1">
+<article id="landing" class="col-md-10 col-md-offset-1">
+    <section id="get-started" class="col-md-5">
         <h3>Get Started Here</h3>
         <div id="welcome-video"><h1>WELCOME VIDEO</h1></div>
     </section>
 
-    <section id="what-are" class="col-md-5">
+    <section id="what-are" class="col-md-6 col-md-offset-1">
         <h3>What Are Body Wraps?</h3>
         <div class="backing">
             <p>
@@ -12,11 +12,16 @@
                cloth infused with botanical ingredients. When placed on the skin, the wrap helps to tighten, tone and firm in as 
                little as 45 minutes!
             </p>
+            <ul ng-controller="ChecklistCtrl">            
+                <li ng-repeat="item in checklist"><span class="glyphicon glyphicon-ok"></span>{{item.text}}</li>
+            </ul>        
         </div>
-        <ul ng-controller="ChecklistCtrl">            
-            <li ng-repeat="item in checklist"><span class="glyphicon glyphicon-ok"></span>{{item.text}}</li>
-        </ul>
     </section>
+</article>
+
+<article id="before-after" class="col-md-10 col-md-offset-1">
+    <h2 class="col-md-10 col-md-offset-1">Amazing Results</h2>
+    <img src="img/baa1.png">
 </article>
 
 <article id="brochure" class="col-md-10 col-md-offset-1">

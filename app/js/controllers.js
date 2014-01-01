@@ -16,16 +16,16 @@ angular.module('xaymacaWraps.controllers', [])
   })
 .controller('MenuCtrl', function($scope) {
     $scope.menu =   [   { name: "Home", loc: "#/"},
-                        { name: "Buy Body Wraps", loc: "http://wrapxaymaca.myitworks.com/shop/product/111/" },
+                        { name: "Before & After", loc: "#/before" },
+                        { name: "Buy Body Wraps", loc: "#/buy" },
                         { name: "Start Your Own Business", loc: "#/biz" },
                         { name: "About Me", loc: "#/about" },
-                        { name: "Before & After", loc: "#/before" },
                         { name: "Contact", loc: "#/contact"}
                     ];
 })
 .controller('ChecklistCtrl', function($scope) {
     $scope.checklist =  [   { text: "Instant results" },
-                            { text: "Versatile - can be used anywhere from the neck to the toes!" },
+                            { text: "Versatile - can be used anywhere from neck to toes!" },
                             { text: "Tones, tightens and firms" },
                             { text: "Continuous results over 72 hours" },
                             { text: "Results last anywhere from 2 to 6 months" },
