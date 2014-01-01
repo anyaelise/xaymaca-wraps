@@ -1,0 +1,18 @@
+<article id="buy" class="col-md-10 col-md-offset-1">
+    <section>
+        <h3>Order Online</h3>
+        <div class='backing col-md-6 col-md-offset-3'>
+            <h4>Buy one box of 4 wraps retail for $99.</h4>
+            <a href="{{buyURL}}" class='btn'>Buy Now</a>
+        </div>
+        <div class='backing col-md-8 col-md-offset-2'>
+            <h4>Become a Loyal Customer and buy one box of 4 wraps for $59!</h4>
+            <p class='highlight'>Loyal Customer Benefits:</p>
+            <ul ng-controller='LoyalCtrl'>
+                <li ng-repeat='item in checklist'>{{item.text}}</li>                
+            </ul>
+            <a href="{{buyURL}}" class='btn'>Buy Now</a>
+        </div>
+    </section>
+    
+</article>

@@ -3,8 +3,8 @@
 /* Controllers */
 
 angular.module('xaymacaWraps.controllers', [])
-.controller('LandingCtrl', function($scope) {
-    $scope.hello = "Hello World!";
+.controller('MainCtrl', function($scope) {
+    $scope.buyURL = "http://wrapxaymaca.myitworks.com/shop/product/111/";
 })
 .controller('SocialMediaCtrl', function($scope) {
     $scope.sites =  [   { name: "Facebook", icon: "img/facebook.png", loc: "http://www.facebook.com/WrapXaymaca" },
@@ -18,8 +18,8 @@ angular.module('xaymacaWraps.controllers', [])
     $scope.menu =   [   { name: "Home", loc: "#/"},
                         { name: "Before & After", loc: "#/before" },
                         { name: "Buy Body Wraps", loc: "#/buy" },
+                        { name: "How To Wrap", loc: "#/howto" },
                         { name: "Start Your Own Business", loc: "#/biz" },
-                        { name: "About Me", loc: "#/about" },
                         { name: "Contact", loc: "#/contact"}
                     ];
 })
@@ -31,5 +31,12 @@ angular.module('xaymacaWraps.controllers', [])
                             { text: "Results last anywhere from 2 to 6 months" },
                             { text: "All-natural active ingredients" },
                             { text: "Convenient - done in the comfort of your home"}
+                        ];
+})
+.controller('LoyalCtrl', function($scope) {
+    $scope.checklist =  [   { text: 'Save up to 45% on all orders' },
+                            { text: 'Earn Perk Points with every purchase to apply toward FREE product' },
+                            { text: 'Access to FITworks! - a complete wellness community with recipes, weight loss tips, and more' },
+                            { text: 'Convenient & flexible auto-shipment service' }
                         ];
 });
