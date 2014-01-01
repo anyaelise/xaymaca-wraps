@@ -9,5 +9,6 @@ var xaymacaWraps = angular.module('xaymacaWraps', [
 
 xaymacaWraps.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/landing.html', controller: 'LandingCtrl'});
+  $routeProvider.when('/before', {templateUrl: 'partials/before.html', controller: 'LandingCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);

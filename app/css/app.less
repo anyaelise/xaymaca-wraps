@@ -5,6 +5,9 @@
 }
 
 @mainFont: "Century Gothic";
+.fontImp {
+    font-family: "Century Gothic" !important;
+}
 
 /* colors */
 @lightGreen: #DEFE72;
@@ -92,6 +95,11 @@ footer {
 
 .container {
     padding-top: 5% ! important;
+}
+
+.glyphicon-ok {
+    margin-right: 5px;
+    color: @darkGreen;
 }
 
 #nav-top {
@@ -250,7 +258,9 @@ footer {
     }
 }
 
-.glyphicon-ok {
-    margin-right: 5px;
-    color: @darkGreen;
+#before-article {
+    h3 {
+        .fontImp; 
+        color: @darkGreen;
+    }
 }
