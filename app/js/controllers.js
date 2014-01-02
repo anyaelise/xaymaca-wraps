@@ -39,4 +39,19 @@ angular.module('xaymacaWraps.controllers', [])
                             { text: 'Access to FITworks! - a complete wellness community with recipes, weight loss tips, and more' },
                             { text: 'Convenient & flexible auto-shipment service' }
                         ];
+})
+.controller('EarningsCtrl', function($scope) {
+    $scope.checklist =  [   { text: 'A licensed It Works! Global distributorship' },
+                            { text: 'A full treatment of wraps to either use yourself, '
+                                + 'or sell for $25 each to recoup every penny of your intitial investment' },
+                            { text: 'Professional, custom-designed marketing materials & website' },
+                            { text: 'World-class training and support' }
+                        ];
+})
+.controller('WhyCtrl', function($scope) { 
+    $scope.checklist =  [   { text: 'Premium, first to market product' },
+                            { text: 'Exclusive distribution rights' },
+                            { text: 'Affordable, effective product - It Works!' },
+                            { text: 'Own your own modern-day franchise with minimal investment' }
+                        ];
 });

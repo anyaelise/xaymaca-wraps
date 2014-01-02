@@ -1,0 +1,39 @@
+<article id='biz' class='col-md-10 col-md-offset-1'>
+    <section id='biz-start'>
+        <h3>Start Your Own Business</h3>
+        <video width="480" height="360" controls>
+            <source src="resources/income.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br/>
+        <div class='backing col-md-8 col-md-offset-2'>
+            <h4>Can $99 change your life? Believe it!</h4>
+            <br/>
+            <p>            
+                Whether you want to earn a few extra hundred dollars a month or
+                you are pursuing complete financial freedom, starting 
+                your own <span class='highlight'>It Works!</span> business is the way to go.
+            </p>
+        </div>
+    </section>
+    
+    <section id='biz-number'>
+        <h3>What's Your Number?</h3>
+        <img src='img/earnings.png' alt='Earnings Chart'/>        
+        <div class='backing col-md-8 col-md-offset-2'>
+            <h4>For a small investment of $99 you receive the following:</h4>
+            <ul ng-controller='EarningsCtrl'>
+                <li ng-repeat='item in checklist'>{{item.text}}</li>                
+            </ul>
+        </div>
+    </section>
+    
+    <section id="biz-why">
+        <h3>Why It Works! Global?</h3>
+        <div class='backing'>
+            <ul ng-controller="WhyCtrl">
+                <li ng-repeat='item in checklist'><span class="glyphicon glyphicon-ok"></span><h4>{{item.text}}</h4></li>
+            </ul>
+        </div>
+    </section>
+</article>

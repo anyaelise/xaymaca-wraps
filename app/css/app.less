@@ -106,6 +106,8 @@ footer {
     color: white;
     text-align: center;
     margin: 1%;
+    padding-top: 1%;
+    .darkGreenTop;
 }
 
 .container {
@@ -180,11 +182,17 @@ footer {
 }
 
 #landing, #buy {
-    display: inline-block;
     section {
-        display: inline ! important;
+        display: inline-block ! important;
         padding: 0 ! important;
         margin-top: 1% ! important;
+    }
+}
+
+#landing, #buy, #biz {
+    display: inline-block;
+    .fontImp;
+    section {        
         color: white;
         h3 {
             text-align: center;
@@ -223,8 +231,6 @@ footer {
     p {
         margin-top: 10px;
         margin-left: 5px;
-    }
-    h3 {
     }
 }
 
@@ -272,8 +278,10 @@ footer {
     section {
         margin-bottom: 2%;
         padding-bottom: 1%;
-        .darkGreenBottom;
-    }
+        &:nth-child(2n+1) {
+            .darkGreenBorder;
+        }
+    }    
     h3 {
         .fontImp; 
         color: @darkGreen;
@@ -288,15 +296,7 @@ footer {
         padding-top: 1%;
         padding-bottom: 1%;
         margin-bottom: 2%;
-    }
-    ul {
-        text-align: left;
-        margin-left: 15%;
-        li {
-            margin-left: 10px;
-            margin-right: 30px;
-        }
-    }
+    }    
     p {
         margin-left: 15%;
         margin-top: 3%;
@@ -306,4 +306,60 @@ footer {
     section {
         display: inline-block;
     }   
+}
+
+#buy, #biz {
+    ul {
+        text-align: left;
+        margin-left: 15%;
+        li {
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+    }
+}
+
+#biz {
+    text-align: center;
+    section {
+        clear: both;
+        display: inline-block;
+        &:nth-child(even) {
+            .darkGreenBorder;
+        }        
+    }
+    div {
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }      
+    h3 {
+        clear: both;
+    }  
+    h4 {
+        .fontImp;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 2%;
+        display: inline-block;
+        }
+    #biz-start {            
+        p {
+            display: inline;
+            text-align: left;
+            margin-bottom: 2%;
+        }
+    }
+    #biz-why {
+        width: 70%;
+        ul {
+            margin-left: 10%;
+            padding-right: 1%;
+            li {
+                list-style-type: none;
+                margin-right: 1px;
+            }
+        }
+    }
 }
