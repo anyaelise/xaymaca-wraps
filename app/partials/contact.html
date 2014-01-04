@@ -33,12 +33,14 @@
                     <label for="biz" class="highlight control-label">It Works! Business Opportunities</label>     
                 </div>
             </div>
+            <br/>
             <div class="form-group info">
                 <div class="col-md-offset-1 col-md-10">
                     <label for="message">Message*</label>
-                    <input type="textarea" name="message" ng-model="contact.message" class="form-control" required>
+                    <textarea name="message" ng-model="contact.message" class="form-control" rows="6" required></textarea>
                 </div>
             </div>
+            <button type="submit" class="btn brochureButton">Submit Form</button>
             <p class="note">Fields marked with * are required</p>
         </form>
     </section>
