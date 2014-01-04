@@ -189,7 +189,7 @@ footer {
     }
 }
 
-#landing, #buy, #biz {
+#landing, #buy, #biz, #howto {
     display: inline-block;
     .fontImp;
     section {        
@@ -253,7 +253,7 @@ footer {
 }
 
 #brochure {
-    .darkGreenBorder;
+    .darkGreenTop;
     clear: both;
     overflow: hidden;
     margin-top: 2%;
@@ -279,7 +279,10 @@ footer {
         margin-bottom: 2%;
         padding-bottom: 1%;
         &:nth-child(2n+1) {
-            .darkGreenBorder;
+            .darkGreenBottom;
+        }
+        &:nth-child(2) {
+            .darkGreenBottom;
         }
     }    
     h3 {
@@ -362,4 +365,9 @@ footer {
             }
         }
     }
+}
+
+#howto {
+    margin-top: 2%;
+    text-align: center;
 }
