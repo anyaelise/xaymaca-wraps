@@ -1,5 +1,5 @@
-app/bower_components
-nbproject
-node_modules
+app/bower_components/
+nbproject/
+node_modules/
 app/img/*.jpg
 app/resources/*.mp4
