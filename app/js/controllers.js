@@ -54,4 +54,7 @@ angular.module('xaymacaWraps.controllers', [])
                             { text: 'Affordable, effective product - It Works!' },
                             { text: 'Own your own modern-day franchise with minimal investment' }
                         ];
-});
+})
+.controller('ContactCtrl', function($scope) {
+    
+}); 
