@@ -10,7 +10,7 @@ angular.module('xaymacaWraps.controllers', [])
     $scope.sites =  [   { name: "Facebook", icon: "img/facebook.png", loc: "http://www.facebook.com/WrapXaymaca" },
                         { name: "Instagram", icon: "img/instagram.png", loc: "http://www.instagram.com/WrapXaymaca"},
                         { name: "Twitter", icon: "img/twitter.png", loc: "http://www.twitter.com/WrapXaymaca"},
-                        { name: "YouTube", icon: "img/youtube.png", loc: "http://www.youtube.com/WrapXaymaca" }
+                        { name: "YouTube", icon: "img/youtube.png", loc: "http://www.youtube.com/channel/UCtY3ZU8ULZieySWrTP_6gRQ" }
                     ];
 
   })
@@ -55,6 +55,9 @@ angular.module('xaymacaWraps.controllers', [])
                             { text: 'Own your own modern-day franchise with minimal investment' }
                         ];
 })
-.controller('ContactCtrl', function($scope) {
+.controller('ContactCtrl', function($scope, $http) {
+    $scope.submit = function(){
+        
+    };
     
 }); 
