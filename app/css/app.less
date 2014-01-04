@@ -77,14 +77,12 @@
 }
 
 .brochureButton {
-    a {
         color: black;
         .linearGradient(@lightGreen, @darkGreen);
         border-radius: 2px;
         font-family: @mainFont;
         text-transform: uppercase;
         font-weight: bold;
-    }
 }
 
 body {
@@ -109,8 +107,8 @@ footer {
     font-size: 0.8em;
     color: white;
     text-align: center;
-    margin: 1%;
-    padding-top: 1%;
+    margin: 2px;
+    padding-top: 5px;
     .darkGreenTop;
 }
 
@@ -176,6 +174,7 @@ footer {
             }
             &:hover {
                 background-color: @darkGreen;
+                cursor: pointer;
                 a {                
                     color: black;
                     text-shadow: 1px 1px 1px black;
@@ -269,8 +268,8 @@ footer {
 #brochure-buttons {
     display: inline-block;
     text-align: center;
-    .brochureButton;
-    a {
+    a {        
+        .brochureButton;
         width: 150%;
         margin: 10%;
         padding: 5%;
@@ -296,8 +295,10 @@ footer {
 }
 
 #buy {
-    .brochureButton;
     margin-top: 1%;
+    a {
+        .brochureButton;
+    }    
     div {
         text-align: center;
         padding-top: 1%;
@@ -381,6 +382,7 @@ footer {
         text-align: center;
         padding-top: 2%;
         font-size: 1.2em;
+        margin-bottom: 2%;
         p {
             margin-bottom: 2px;
         }
@@ -388,9 +390,8 @@ footer {
             margin-right: 2px;
             margin-left: 15px;
         }
-        input[type='textarea'] {
+        textarea {
             margin-bottom: 3%;
-            height: 10em;
         }
     } 
     .info {
@@ -400,5 +401,9 @@ footer {
     .note {
         font-size: 0.8em;
         margin-bottom: 1%;
+    }
+    button {
+        .brochureButton;
+        margin-bottom: 5%;
     }
 }
