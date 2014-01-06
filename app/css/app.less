@@ -151,19 +151,20 @@ footer {
 }
 
 #nav-menu {
-    .darkGreenBorder;
-    .linearGradient(@medGray, #000);
-    border-radius: 0 ! important;
+    .darkGreenFullBorder;
+    .linearGradient(@medGray, black);
+    border-radius: 0;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 1%;
+    margin-top: 0;
+    /*display: inline-block;*/
     ul {
         margin: 0! important;
         text-align: center;
         li {
             display: inline-block;
             list-style-type: none;
-            padding: 0.5% 2% 0.5% 2%;
+            padding: 0.5% 2%;
             a {
                 color: white;
                 text-shadow: 2px 2px 1px black;
@@ -192,7 +193,6 @@ footer {
     section {
         display: inline-block ! important;
         padding: 0 ! important;
-        margin-top: 1% ! important;
     }
 }
 
@@ -317,6 +317,7 @@ footer {
     }
     section {
         display: inline-block;
+        margin-top: 1% ! important;
     }   
 }
 
