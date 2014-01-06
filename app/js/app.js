@@ -16,3 +16,12 @@ xaymacaWraps.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'MainCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
+
+
+/****** jQuery stuff *******/
+$(function() {
+    $('li').click(function() {
+        var children = $(this).children();
+        children[0].click();
+    });
+});
