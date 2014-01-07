@@ -14,6 +14,7 @@ xaymacaWraps.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/biz', {templateUrl: 'partials/biz.html', controller: 'MainCtrl'});
   $routeProvider.when('/howto', {templateUrl: 'partials/howto.html', controller: 'MainCtrl'});
   $routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'MainCtrl'});
+  $routeProvider.when('/thanks', {templateUrl: 'partials/thanks.html', controller: 'MainCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
 

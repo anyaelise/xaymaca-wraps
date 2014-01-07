@@ -57,8 +57,8 @@ angular.module('xaymacaWraps.controllers', [])
 })
 .controller('ContactCtrl', function($scope, $http) {
     $scope.submit = function(){
-        var info = JSON.stringify({name: $scope.fullname, email: $scope.email, products: $scope.products, biz: $scope.biz, message: $scope.message});
-        $http.post('/contact.php', info).
+        //console.debug($scope.contact);     
+        $http.post('/contact.php', $scope.contact).
                 success(function(data, status, headers, config) {
                     console.debug("Successful!");
                     console.debug(data);
