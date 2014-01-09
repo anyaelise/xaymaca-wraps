@@ -55,16 +55,18 @@ angular.module('xaymacaWraps.controllers', [])
                             { text: 'Own your own modern-day franchise with minimal investment' }
                         ];
 })
-.controller('ContactCtrl', function($scope, $http) {
+.controller('ContactCtrl', function($scope, $http, $location) {
     $scope.submit = function(){
-        //console.debug($scope.contact);     
         $http.post('/contact.php', $scope.contact).
                 success(function(data, status, headers, config) {
                     console.debug("Successful!");
                     console.debug(data);
+                    $location.path('/thanks');
         }).
                 error(function(data, status, headers, config) {
                     console.debug("Unsuccessful :(");
+                    $location.path('/thanks');
+                    
         });       
     };
     
