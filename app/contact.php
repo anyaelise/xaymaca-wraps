@@ -5,8 +5,8 @@ $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
 
 /* Compose email */
-$email_to = "sweetjamaican@gmail.com";
-$email_from = "admin@wrapxaymaca.com";
+$email_to = "wrapxaymaca@gmail.com";
+$email_from = "donotreply@wrapxaymaca.com";
 $email_subject = "Contact Form submission from wrapxaymaca.com";
 $email_message = "";
 foreach($request as $key => $val) {
