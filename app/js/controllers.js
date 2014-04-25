@@ -5,6 +5,7 @@
 angular.module('xaymacaWraps.controllers', [])
 .controller('MainCtrl', function($scope) {
     $scope.buyURL = "http://wrapxaymaca.myitworks.com/shop/product/111/";
+    $scope.bizURL = "http://wrapxaymaca.myitworks.com/crazywrap/";
 })
 .controller('SocialMediaCtrl', function($scope) {
     $scope.sites =  [   { name: "Facebook", icon: "img/facebook.png", loc: "http://www.facebook.com/WrapXaymaca" },
